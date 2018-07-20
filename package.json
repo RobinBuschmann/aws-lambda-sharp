@@ -1,0 +1,30 @@
+{
+  "name": "aws-lambda-sharp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobinBuschmann/aws-lambda-sharp.git"
+  },
+  "keywords": [
+    "AWS",
+    "S3",
+    "sharp"
+  ],
+  "author": "Robin Baum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobinBuschmann/aws-lambda-sharp/issues"
+  },
+  "homepage": "https://github.com/RobinBuschmann/aws-lambda-sharp",
+  "dependencies": {
+    "@types/node": "^10.5.2",
+    "@types/sharp": "^0.17.9",
+    "aws-sdk": "^2.1.21",
+    "sharp": "^0.20.5"
+  }
+}
