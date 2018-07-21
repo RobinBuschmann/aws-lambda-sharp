@@ -21,7 +21,7 @@ exports.handler = async (event, context) => {
         const {Body: imageBuffer} = await s3.getObject({Bucket, Key}).promise();
 
         logger.log(`Resize ${Bucket}/${Key}`);
-        const resizedImagerBuffer = await sharp(imageBuffer as Buffer).resize(maxWidth).toBuffer()
+        const resizedImagerBuffer = await sharp(imageBuffer as Buffer).resize(maxWidth).rotate().toBuffer();
 
         logger.log(`Upload ${Bucket}/${Key}`);
         await s3.upload({Bucket, Key: DestKey, Body: resizedImagerBuffer}).promise();
